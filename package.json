@@ -9,10 +9,13 @@
     "preview": "astro preview",
     "astro": "astro",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "tailwind:init": "tailwindcss init -p"
   },
   "dependencies": {
-    "astro": "^5.7.13"
+    "@tailwindcss/vite": "^4.1.6",
+    "astro": "^5.7.13",
+    "tailwindcss": "^4.1.6"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
