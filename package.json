@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "postbuild": "touch dist/.nojekyll",
     "preview": "astro preview",
     "astro": "astro",
     "predeploy": "npm run build",
