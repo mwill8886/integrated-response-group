@@ -1,13 +1,21 @@
 @import 'tailwindcss';
 
-/* For any free w/ attribution assets - post attribution here */
-/* Background pattern from https://www.transparenttextures.com */
+/* Tailwind CSS Default Breakpoints
+-------------------------------------
+sm   => 640px   (min-width)
+md   => 768px   (min-width)
+lg   => 1024px  (min-width)
+xl   => 1280px  (min-width)
+2xl  => 1536px  (min-width)
+------------------------------------- */
 
 
 
 /*=============================================
 =            Backgrounds/Textures            =
 =============================================*/
+/* For any free w/ attribution assets - post attribution here */
+/* Background pattern from https://www.transparenttextures.com */
 
 .bg-grid {
   background-image:
