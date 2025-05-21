@@ -8,3 +8,5 @@
 - **Godaddy Hosting** — Static site hosting (DNS, domain, etc).
 
 - **Mailchimp Email** — Handles email campaigns and CRM
+
+- **Google Analytics** — Site analytics - NEED TO SETUP

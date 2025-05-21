@@ -19,6 +19,7 @@
     "tailwindcss": "^4.1.6"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.20",
     "gh-pages": "^6.3.0"
   }
 }
