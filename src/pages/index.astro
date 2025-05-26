@@ -5,6 +5,9 @@ import '../styles/global.css';
 
 import heroImg from '../assets/rescue-swimmer.jpg';
 import heroImgMobile from '../assets/rescue-swimmer-mobile.jpg';
+import heroVideo from '../assets/irg-chinook-landing-center.mp4';
+import whoWeAreImg from '../assets/irg-pilots-in-front-of-helicopter.webp';
+import logisticsGapImg from '../assets/irg-loading-supplies.webp';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -30,7 +33,7 @@ import heroImgMobile from '../assets/rescue-swimmer-mobile.jpg';
 
     <!-- Hero Section -->
     <section class="relative w-full h-[90vh] overflow-hidden">
-      <picture>
+      <!-- <picture>
         <source srcset={heroImg.src} media="(min-width: 768px)" />
         <source srcset={heroImgMobile.src} media="(max-width: 768px)" />
         <Image
@@ -39,7 +42,18 @@ import heroImgMobile from '../assets/rescue-swimmer-mobile.jpg';
           class="object-cover w-full h-full"
           preload
         />
-      </picture>
+      </picture> -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute w-full h-full object-cover z-0"
+      >
+        <source src={heroVideo} type="video/mp4" />
+        <!-- TODO: insert fallback image here -->
+        Your browser does not support the video tag.
+      </video>
       <div class="w-full h-full absolute bg-grid z-10 top-0"></div>
       <!-- Hero content -->
       <!-- positioning of content will depend on creative asset -->
@@ -55,6 +69,9 @@ import heroImgMobile from '../assets/rescue-swimmer-mobile.jpg';
             >
               Integrated Response Group
             </h1>
+            <p class="text-xl mb-6 max-w-xl">
+              Precision in Chaos,<br /> Unity in Response
+            </p>
             <p class="text-xl mb-6 max-w-xl">
               Rapid, reliable disaster response — led by those who’ve served.
             </p>
@@ -87,6 +104,10 @@ import heroImgMobile from '../assets/rescue-swimmer-mobile.jpg';
       <div
         class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-end"
       >
+        <div class="w-full md:w-1/2 flex items-center justify-center">
+          <p>Natural disaster photo (depressed) or data</p>
+        </div>
+
         <div class="w-full md:w-1/2">
           <h2 class="text-3xl font-bold mb-4">
             The Growing Crisis (problem statement)
@@ -129,12 +150,27 @@ import heroImgMobile from '../assets/rescue-swimmer-mobile.jpg';
             a prolonged humanitarian emergency.
           </p>
         </div>
+
+        <div class="w-full md:w-1/2 flex items-center justify-center">
+          <Image
+            src={logisticsGapImg}
+            alt="Hero background"
+            class="object-cover w-full h-full"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
 
     <!-- Mission Section -->
     <section class="px-6 py-12 md:py-20 bg-gray-50">
       <div class="max-w-5xl mx-auto text-center">
+        <Image
+          src={whoWeAreImg}
+          alt="Hero background"
+          class="object-cover w-full h-full"
+          loading="lazy"
+        />
         <h2 class="text-3xl font-bold mb-4">Who We Are (intro)</h2>
         <p class="text-lg text-gray-700">
           Founded by veterans, Integrated Response Group brings military-grade

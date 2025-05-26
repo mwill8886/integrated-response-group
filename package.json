@@ -2,7 +2,7 @@
   "name": "absent-astronaut",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://mwill8886.github.io/integrated-response-group",
+  "homepage": "https://mwill8886.github.io/integrated-response-group/",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
