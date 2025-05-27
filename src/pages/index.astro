@@ -107,15 +107,12 @@ import logisticsGapImg from '../assets/irg-loading-supplies.webp';
           class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row justify-end items-center gap-12"
         >
           <div class="flex-1 flex items-center justify-center">
-             <picture>
-              <source srcset={growingCrisis.src} />
-              <Image
+             <Image
                 src={growingCrisis}
                 alt="destroyed house"
                 class="object-cover w-full h-full drop-shadow-lg"
-                preload
+                loading="lazy"
               />
-            </picture>
           </div>
 
           <div class="flex-1">
