@@ -7,6 +7,7 @@ import heroImg from '../assets/rescue-swimmer.jpg';
 import heroImgMobile from '../assets/rescue-swimmer-mobile.jpg';
 import heroVideo from '../assets/irg-chinook-landing-center.mp4';
 import whoWeAreImg from '../assets/irg-pilots-in-front-of-helicopter.webp';
+import growingCrisis from '../assets/irg-destroyed-home-cropped.webp';
 import logisticsGapImg from '../assets/irg-loading-supplies.webp';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -32,7 +33,7 @@ import logisticsGapImg from '../assets/irg-loading-supplies.webp';
     <!-- / Header Section -->
 
     <!-- Hero Section -->
-    <section class="relative w-full h-[90vh] overflow-hidden">
+    <section class="relative w-full h-[100vh] overflow-hidden">
       <!-- <picture>
         <source srcset={heroImg.src} media="(min-width: 768px)" />
         <source srcset={heroImgMobile.src} media="(max-width: 768px)" />
@@ -99,133 +100,156 @@ import logisticsGapImg from '../assets/irg-loading-supplies.webp';
     </section>
     <!-- / Hero Section -->
 
-    <!-- Problem statement -->
-    <section class="py-12 bg-white">
-      <div
-        class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-end"
-      >
-        <div class="w-full md:w-1/2 flex items-center justify-center">
-          <p>Natural disaster photo (depressed) or data</p>
-        </div>
+    <section class="py-32 bg-black/80  bg-fixed bg-cover bg-center bg-[url('/public/pexels-flood-arial.webp')] bg-blend-darken">
+      <!-- Problem statement -->
+      <div class="mb-32">
+        <div
+          class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-end items-center"
+        >
+          <div class="w-full md:w-1/2 flex items-center justify-center relative">
+             <!-- <Image
+              src={growingCrisis}
+              alt="destroyed house"
+              class="object-cover w-full h-full"
+              loading="lazy"
+            /> -->
+             <picture>
+              <source srcset={growingCrisis.src} />
+              <Image
+                src={growingCrisis}
+                alt="destroyed house"
+                class="object-cover w-full h-full drop-shadow-lg"
+                preload
+              />
+            </picture>
+          </div>
 
-        <div class="w-full md:w-1/2">
-          <h2 class="text-3xl font-bold mb-4">
-            The Growing Crisis (problem statement)
-          </h2>
-          <p>use recent real world examples with specifics of impact</p>
-          <br />
-          <p class="text-lg text-gray-700">
-            Natural disasters are increasing in both frequency and intensity —
-            from catastrophic hurricanes and wildfires to record-breaking floods
-            and tornadoes. These events leave lasting scars on communities,
-            displacing families, overwhelming local infrastructure, and causing
-            billions in economic losses year after year. Despite heroic efforts,
-            the government and local response systems are often stretched to
-            their limits. Coordination stalls, resources arrive late or are
-            misallocated, and critical information fails to reach the people who
-            need it most. In the fog of crisis, time and clarity are everything
-            — and too often, both are lost.
-          </p>
+          <div class="w-full md:w-1/2 p-12">
+            <h2 class="text-white text-3xl font-bold mb-4">
+              The Growing Crisis
+            </h2>
+            <p class="text-zinc-200 text-lg">
+              Natural disasters are increasing in both frequency and intensity —
+              from catastrophic hurricanes and wildfires to record-breaking floods
+              and tornadoes. These events leave lasting scars on communities,
+              displacing families, overwhelming local infrastructure, and causing
+              billions in economic losses year after year. Despite heroic efforts,
+              the government and local response systems are often stretched to
+              their limits. Coordination stalls, resources arrive late or are
+              misallocated, and critical information fails to reach the people who
+              need it most. In the fog of crisis, time and clarity are everything
+              — and too often, both are lost.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center">
+          <div class="w-full md:w-1/2  p-12">
+            <h2 class="text-white text-3xl font-bold mb-4">
+              The Logistics Gap
+            </h2>
+            <p class="text-lg text-zinc-200">
+              What many don’t see is that effective disaster relief hinges not
+              just on resources — but on the ability to move, allocate, and act
+              with precision. Without clear planning, defined leadership, and
+              operational discipline, even the best intentions can collapse under
+              pressure. Delays in supply chains, confusion over roles, and
+              fragmented response efforts can turn an already dire situation into
+              a prolonged humanitarian emergency.
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/2 flex items-center justify-center">
+            <Image
+              src={logisticsGapImg}
+              alt="men loading supplies to helicopter"
+              class="object-cover w-full h-full drop-shadow-lg"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="py-12 bg-white">
-      <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row">
-        <div class="w-full md:w-1/2">
-          <h2 class="text-3xl font-bold mb-4">
-            The Logistics Gap (problem statement cont)
-          </h2>
-          <p>
-            use real world examples and specific problems from recent events
-          </p>
-          <br />
-          <p class="text-lg text-gray-700">
-            What many don’t see is that effective disaster relief hinges not
-            just on resources — but on the ability to move, allocate, and act
-            with precision. Without clear planning, defined leadership, and
-            operational discipline, even the best intentions can collapse under
-            pressure. Delays in supply chains, confusion over roles, and
-            fragmented response efforts can turn an already dire situation into
-            a prolonged humanitarian emergency.
-          </p>
-        </div>
-
-        <div class="w-full md:w-1/2 flex items-center justify-center">
-          <Image
-            src={logisticsGapImg}
-            alt="Hero background"
-            class="object-cover w-full h-full"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </section>
 
     <!-- Mission Section -->
-    <section class="px-6 py-12 md:py-20 bg-gray-50">
-      <div class="max-w-5xl mx-auto text-center">
-        <Image
-          src={whoWeAreImg}
-          alt="Hero background"
-          class="object-cover w-full h-full"
-          loading="lazy"
-        />
-        <h2 class="text-3xl font-bold mb-4">Who We Are (intro)</h2>
-        <p class="text-lg text-gray-700">
-          Founded by veterans, Integrated Response Group brings military-grade
-          logistics and leadership to natural disaster zones. We coordinate aid,
-          medical response, and operations where timing and teamwork matter
-          most.
-        </p>
-        <p>
-          We are former military operators with one mission: bring order to
-          chaos when disaster strikes. Integrated Response Group was founded by
-          veterans who’ve led under pressure. Today, we bring that same
-          discipline to civilian disaster relief — from logistical coordination
-          and medical deployment to tactical rescue operations. We don’t just
-          respond — we organize, act, and lead.
-        </p>
+    <section class="py-32 bg-white bg-grid-lg">
+      <div class="mb-32">
+        <div
+          class="container mx-auto px-4 md:px-8 text-center"
+        >
+          <h2 class="text-3xl font-bold mb-4">
+              Who We Are
+          </h2>
+          <p class="text-lg text-gray-700">
+            Founded by veterans, Integrated Response Group brings military-grade
+            logistics and leadership to natural disaster zones. We coordinate aid,
+            medical response, and operations where timing and teamwork matter
+            most.
+          </p>
+          <br/>
+          <p class="text-lg">
+            We are former military operators with one mission: bring order to
+            chaos when disaster strikes. Integrated Response Group was founded by
+            veterans who’ve led under pressure. Today, we bring that same
+            discipline to civilian disaster relief — from logistical coordination
+            and medical deployment to tactical rescue operations. We don’t just
+            respond — we organize, act, and lead.
+          </p>
+        </div>
       </div>
-    </section>
 
-    <!-- Mission Section -->
-    <section class="px-6 py-12 md:py-20 bg-gray-50">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-4">Our Mission (solution)</h2>
-        <p class="text-lg text-gray-700">
-          The Integrated Response Group exists to close this gap. Founded and
-          led by veterans with deep operational expertise, we bring
-          military-grade logistics, planning, and leadership to civilian
-          disaster response. We don’t just react — we establish structure,
-          streamline communication, and direct action when and where it matters
-          most. Our mission is simple: restore order, accelerate recovery, and
-          protect lives when every second counts.
-        </p>
+      <div>
+        <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center">
+          <div class="w-full md:w-1/2  p-12">
+            <h2 class="text-3xl font-bold mb-4">
+              Our Mission
+            </h2>
+            <p class="text-lg ">
+              The Integrated Response Group exists to close this gap. Founded and
+              led by veterans with deep operational expertise, we bring
+              military-grade logistics, planning, and leadership to civilian
+              disaster response. We don’t just react — we establish structure,
+              streamline communication, and direct action when and where it matters
+              most. Our mission is simple: restore order, accelerate recovery, and
+              protect lives when every second counts.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 flex items-center justify-center">
+            <Image
+              src={whoWeAreImg}
+              alt="pilots in front of helicopter"
+              class="object-cover w-full h-full"
+              loading="lazy"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="px-6 py-12 md:py-20 bg-orange-600 text-white text-center">
+    <section class="py-32 bg-black/70 text-white text-center bg-cover bg-center bg-[url('/public/irg-blackhawk.webp')] bg-blend-darken">
       <h2 class="text-3xl font-bold mb-4">Join the Mission</h2>
-      <p class="mb-6">
+      <p class="mb-12">
         Help us deliver faster, smarter disaster response — grounded in service
         and built on experience.
       </p>
       <div class="space-x-4">
         <a
           href="#contact"
-          class="bg-white text-orange-600 font-semibold px-6 py-3 rounded hover:bg-gray-200"
+          class="bg-white text-zinc-900 font-semibold px-6 py-3 rounded hover:bg-gray-200"
           >Volunteer</a
         >
         <a
           href="#contact"
-          class="bg-white text-orange-600 font-semibold px-6 py-3 rounded hover:bg-gray-200"
+          class="bg-white text-zinc-900 font-semibold px-6 py-3 rounded hover:bg-gray-200"
           >Donate</a
         >
         <a
           href="#contact"
-          class="bg-white text-orange-600 font-semibold px-6 py-3 rounded hover:bg-gray-200"
+          class="bg-white text-zinc-900 font-semibold px-6 py-3 rounded hover:bg-gray-200"
           >Partner With Us</a
         >
       </div>
@@ -233,7 +257,7 @@ import logisticsGapImg from '../assets/irg-loading-supplies.webp';
     <!-- / CTA Section -->
 
     <!-- Services Section -->
-    <section class="px-6 py-12 bg-gray-100">
+    <section class="py-32 bg-gray-100">
       <div class="container mx-auto px-4 md:px-8">
         <h2 class="text-3xl font-bold text-center mb-10">
           What We Do (solution cont)

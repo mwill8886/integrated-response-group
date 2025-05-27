@@ -24,4 +24,11 @@ xl   => 1280px  (min-width)
   background-size: 4px 4px; /* Controls grid size */
 }
 
+.bg-grid-lg {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px; /* Controls grid size */
+}
+
 /*=====  End of Backgrounds/Textures  ======*/
