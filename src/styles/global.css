@@ -25,6 +25,13 @@ xl   => 1280px  (min-width)
 @font-face {
   font-family: 'Raleway';
   src: url('/integrated-response-group/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('/integrated-response-group/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -32,6 +39,7 @@ xl   => 1280px  (min-width)
 
 @theme {
   --font-sans: 'Raleway', 'sans-serif';
+  --font-weight-light: 300;
 }
 
 .leading-normal {
