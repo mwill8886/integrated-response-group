@@ -10,6 +10,40 @@ xl   => 1280px  (min-width)
 ------------------------------------- */
 
 
+/*=============================================
+=            Globals            =
+=============================================*/
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/integrated-response-group/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/integrated-response-group/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Raleway', 'sans-serif';
+}
+
+.leading-normal {
+  line-height: normal;
+}
+
+/*=====  End of Globals  ======*/
+
+
+
+
+
 
 /*=============================================
 =            Backgrounds/Textures            =

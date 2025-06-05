@@ -1,12 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import svgr from 'vite-plugin-svgr';
 
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
   base: '/integrated-response-group/',
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss(), svgr()],
   },
 });

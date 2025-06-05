@@ -14,7 +14,12 @@ import logisticsImg from '../assets/picryl-supply-logistics.webp';
 import rescueImg from '../assets/pexels-search-and-rescue.webp';
 import medicalImg from '../assets/picryl-medical-response.webp';
 import planningImg from '../assets/picryl-planning.webp';
+
+import LogoFull from '../assets/irg-logo-full.svg';
+import LogoHalf from '../assets/irg-logo-half.svg';
+import LogoIcon from '../assets/irg-logo-icon.svg';
 ---
+
 <!-- TODO: update container to max-w-7xl -->
 <Layout>
   <div class="bg-gray-100 text-gray-900 font-sans">
@@ -26,7 +31,10 @@ import planningImg from '../assets/picryl-planning.webp';
     <!-- Header Section -->
     <header class="top-[40px] fixed w-full z-20 bg-white drop-shadow-sm">
       <div class="container mx-auto p-2 flex justify-between">
-        <h1 class="flex items-center">Logo Here</h1>
+        <h1 class="flex items-center">
+          <LogoIcon class="inline-block fill-zinc-900 w-6 h-6 mr-1" />
+          <span class="uppercase font-black text-2xl leading-normal">IRG</span>
+        </h1>
         <div class="flex gap-4">
           <a
             href="#contact"
@@ -69,87 +77,101 @@ import planningImg from '../assets/picryl-planning.webp';
       <div class="absolute inset-0 z-5 hero-gradient-overlay"></div>
       <!-- Hero content -->
       <!-- positioning of content will depend on creative asset -->
-      <div class="absolute z-10 bottom-[50px] md:bottom-[10%] w-full">
-          <div class=" p-8 text-white container mx-auto text-center">
-            <p>logo here</p>
-            <h1
-              class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold sm:mb-4"
-            >
-              Integrated Response Group
-            </h1>
-            <p class="sm:text-xl md:text-2xl mb-6">
-              Precision in Chaos, Unity in Response
-            </p>
-            <div class="max-w-lg mx-auto mb-9 smmb-18">
-              <p class="text-zinc-300 text-sm sm:text-base">
-                Precision disaster response, led by veterans. We bring
-                military-grade coordination to natural disasters, organizing aid,
-                rescue, and recovery when lives are on the line.
-              </p>
-            </div>
-            <div class="space-x-4">
-              <a
-                href="#help"
-                class="bg-white text-black hover:bg-gray-200 px-6 py-3 rounded font-semibold inline-block"
-                >Get Involved</a
-              >
-               <a
-                href="#contact"
-                class="bg-white hover:bg-gray-200 px-6 py-3 rounded text-black font-semibold hidden sm:inline-block"
-                >Contact Us</a
-              >
-            </div>
+      <div class="absolute z-10 bottom-[5%] md:bottom-[10%] w-full">
+        <div class="p-8 text-white container mx-auto text-center">
+          <div>
+            <LogoFull
+              class="hidden sm:inline-block fill-white w-full max-w-[800px] mx-auto mb-12"
+            />
+            <LogoHalf
+              class="inline-block sm:hidden fill-white w-full max-w-[350px] mx-auto mb-6"
+            />
           </div>
+          <p class="font-bold uppercase sm:text-lg md:text-xl mb-2">
+            Precision in Chaos, Unity in Response
+          </p>
+          <div class="max-w-2xl mx-auto mb-9 sm:mb-8">
+            <p class="text-zinc-300 text-sm sm:text-base">
+              Precision disaster response, led by veterans. We bring
+              military-grade coordination to natural disasters, organizing aid,
+              rescue, and recovery when lives are on the line.
+            </p>
+          </div>
+          <div class="space-x-4">
+            <a
+              href="#help"
+              class="bg-white text-black hover:bg-gray-200 px-6 py-3 rounded font-semibold inline-block"
+              >Get Involved</a
+            >
+            <a
+              href="#contact"
+              class="bg-white hover:bg-gray-200 px-6 py-3 rounded text-black font-semibold hidden sm:inline-block"
+              >Contact Us</a
+            >
+          </div>
+        </div>
       </div>
       <!-- /Hero content -->
     </section>
     <!-- / Hero Section -->
 
-
-    <section class="py-32 bg-black/80  bg-fixed bg-cover bg-center bg-[url('/public/pexels-flood-arial.webp')] bg-blend-darken">
+    <section
+      class="py-32 bg-black/80 bg-fixed bg-cover bg-center bg-[url('/public/pexels-flood-arial.webp')] bg-blend-darken"
+    >
       <!-- Problem statement -->
       <div class="mb-32">
         <div
           class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row justify-end items-center gap-12"
         >
           <div class="flex-1 flex items-center justify-center">
-             <Image
-                src={growingCrisisImg}
-                alt="destroyed house"
-                class="object-cover w-full h-full drop-shadow-lg"
-                loading="lazy"
-              />
+            <Image
+              src={growingCrisisImg}
+              alt="destroyed house"
+              class="object-cover w-full h-full drop-shadow-lg"
+              loading="lazy"
+            />
           </div>
 
           <div class="flex-1">
             <h2 class="flex text-white text-3xl font-bold mb-4">
-              <div class="border border-solid border-white rounded-full size-[36px] flex items-center justify-center mr-2">
-                <span class="material-symbols-outlined !font-black !text-2xl">double_arrow</span>
+              <div
+                class="border border-solid border-white rounded-full size-[36px] flex items-center justify-center mr-2"
+              >
+                <span class="material-symbols-outlined !font-black !text-2xl"
+                  >double_arrow</span
+                >
               </div>
               The Growing Crisis
             </h2>
             <p class="text-zinc-300 text-lg">
               Natural disasters are increasing in both frequency and intensity —
-              from catastrophic hurricanes and wildfires to record-breaking floods
-              and tornadoes. These events leave lasting scars on communities,
-              displacing families, overwhelming local infrastructure, and causing
-              billions in economic losses year after year. Despite heroic efforts,
-              the government and local response systems are often stretched to
-              their limits. Coordination stalls, resources arrive late or are
-              misallocated, and critical information fails to reach the people who
-              need it most. In the fog of crisis, time and clarity are everything
-              — and too often, both are lost.
+              from catastrophic hurricanes and wildfires to record-breaking
+              floods and tornadoes. These events leave lasting scars on
+              communities, displacing families, overwhelming local
+              infrastructure, and causing billions in economic losses year after
+              year. Despite heroic efforts, the government and local response
+              systems are often stretched to their limits. Coordination stalls,
+              resources arrive late or are misallocated, and critical
+              information fails to reach the people who need it most. In the fog
+              of crisis, time and clarity are everything — and too often, both
+              are lost.
             </p>
           </div>
         </div>
       </div>
 
       <div>
-        <div class="container mx-auto px-4 md:px-8 flex flex-col-reverse lg:flex-row items-center gap-12">
+        <div
+          class="container mx-auto px-4 md:px-8 flex flex-col-reverse lg:flex-row items-center gap-12"
+        >
           <div class="flex-1">
             <h2 class="flex text-white text-3xl font-bold mb-4">
-              <div class="border border-solid border-white rounded-full size-[36px] flex items-center justify-center mr-2">
-                <span class="material-symbols-outlined !font-black !text-2xl">double_arrow</span>
+              <div
+                class="border border-solid border-white rounded-full size-[36px] flex items-center justify-center mr-2"
+              >
+                <span class="material-symbols-outlined !font-black !text-2xl"
+                  >double_arrow</span
+                >
               </div>
               The Logistics Gap
             </h2>
@@ -157,10 +179,10 @@ import planningImg from '../assets/picryl-planning.webp';
               What many don’t see is that effective disaster relief hinges not
               just on resources — but on the ability to move, allocate, and act
               with precision. Without clear planning, defined leadership, and
-              operational discipline, even the best intentions can collapse under
-              pressure. Delays in supply chains, confusion over roles, and
-              fragmented response efforts can turn an already dire situation into
-              a prolonged humanitarian emergency.
+              operational discipline, even the best intentions can collapse
+              under pressure. Delays in supply chains, confusion over roles, and
+              fragmented response efforts can turn an already dire situation
+              into a prolonged humanitarian emergency.
             </p>
           </div>
 
@@ -176,54 +198,63 @@ import planningImg from '../assets/picryl-planning.webp';
       </div>
     </section>
 
-
     <div class="bg-white bg-grid-lg">
       <!-- Mission Section -->
       <section class="py-32">
-        <p class="text-center">logo here</p>
+        <LogoFull class="fill-zinc-900 w-full  max-w-[300px] md:max-w-[450px] mx-auto mb-12"/>
         <div class="container lg:max-w-5xl mx-auto px-4 md:px-8 text-center">
           <!-- TODO: center logo -->
           <h2 class="flex text-3xl font-bold mb-4 justify-center">
-            <div class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2">
-              <span class="material-symbols-outlined !font-black !text-2xl">double_arrow</span>
+            <div
+              class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2"
+            >
+              <span class="material-symbols-outlined !font-black !text-2xl"
+                >double_arrow</span
+              >
             </div>
             Who We Are
           </h2>
           <p class="text-lg text-zinc-700">
             Founded by veterans, Integrated Response Group brings military-grade
-            logistics and leadership to natural disaster zones. We coordinate aid,
-            medical response, and operations where timing and teamwork matter
-            most.
+            logistics and leadership to natural disaster zones. We coordinate
+            aid, medical response, and operations where timing and teamwork
+            matter most.
           </p>
-          <br/>
+          <br />
           <p class="text-lg text-zinc-700">
             We are former military operators with one mission: bring order to
-            chaos when disaster strikes. Integrated Response Group was founded by
-            veterans who’ve led under pressure. Today, we bring that same
-            discipline to civilian disaster relief — from logistical coordination
-            and medical deployment to tactical rescue operations. We don’t just
-            respond — we organize, act, and lead.
+            chaos when disaster strikes. Integrated Response Group was founded
+            by veterans who’ve led under pressure. Today, we bring that same
+            discipline to civilian disaster relief — from logistical
+            coordination and medical deployment to tactical rescue operations.
+            We don’t just respond — we organize, act, and lead.
           </p>
         </div>
       </section>
 
       <section class="pb-32">
-         <div class="container mx-auto px-4 md:px-8 flex flex-col-reverse lg:flex-row items-center gap-12 xl:gap-24">
+        <div
+          class="container mx-auto px-4 md:px-8 flex flex-col-reverse lg:flex-row items-center gap-12 xl:gap-24"
+        >
           <div class="flex-1">
             <h2 class="flex text-3xl font-bold mb-4 flex">
-              <div class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2">
-                <span class="material-symbols-outlined !font-black !text-2xl">double_arrow</span>
+              <div
+                class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2"
+              >
+                <span class="material-symbols-outlined !font-black !text-2xl"
+                  >double_arrow</span
+                >
               </div>
               Our Mission
             </h2>
             <p class="text-lg text-zinc-700">
-              The Integrated Response Group exists to close this gap. Founded and
-              led by veterans with deep operational expertise, we bring
+              The Integrated Response Group exists to close this gap. Founded
+              and led by veterans with deep operational expertise, we bring
               military-grade logistics, planning, and leadership to civilian
               disaster response. We don’t just react — we establish structure,
-              streamline communication, and direct action when and where it matters
-              most. Our mission is simple: restore order, accelerate recovery, and
-              protect lives when every second counts.
+              streamline communication, and direct action when and where it
+              matters most. Our mission is simple: restore order, accelerate
+              recovery, and protect lives when every second counts.
             </p>
           </div>
           <div class="flex-1 flex items-center justify-center">
@@ -238,15 +269,16 @@ import planningImg from '../assets/picryl-planning.webp';
         </div>
       </section>
 
-
-
-
       <!-- Services Section -->
       <section class="py-32 bg-zinc-200/50">
         <div class="container mx-auto px-4 lg:px-8">
           <h2 class="flex text-3xl font-bold text-center mb-10 justify-center">
-            <div class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2">
-              <span class="material-symbols-outlined !font-black !text-2xl">double_arrow</span>
+            <div
+              class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2"
+            >
+              <span class="material-symbols-outlined !font-black !text-2xl"
+                >double_arrow</span
+              >
             </div>
             What We Do
           </h2>
@@ -258,14 +290,16 @@ import planningImg from '../assets/picryl-planning.webp';
                 class="object-cover w-full max-h-[150px]"
                 loading="lazy"
               />
-              <h3 class="flex items-center justify-center bg-zinc-900 text-white text-lg font-semibold p-2">
+              <h3
+                class="flex items-center justify-center bg-zinc-900 text-white text-lg font-semibold p-2"
+              >
                 Disaster Logistics
               </h3>
               <p class="p-4">
-                We manage the full scope of disaster logistics — from supply chain
-                routing and asset allocation to personnel coordination and site
-                readiness. Our teams move fast to ensure critical resources get
-                where they’re needed, when they’re needed.
+                We manage the full scope of disaster logistics — from supply
+                chain routing and asset allocation to personnel coordination and
+                site readiness. Our teams move fast to ensure critical resources
+                get where they’re needed, when they’re needed.
               </p>
             </div>
             <div class="bg-white text-center">
@@ -275,14 +309,16 @@ import planningImg from '../assets/picryl-planning.webp';
                 class="object-cover w-full max-h-[150px]"
                 loading="lazy"
               />
-              <h3 class="flex items-center justify-center bg-zinc-900 text-white text-lg font-semibold p-2">
+              <h3
+                class="flex items-center justify-center bg-zinc-900 text-white text-lg font-semibold p-2"
+              >
                 Search & Rescue Ops
               </h3>
               <p class="p-4">
                 Led by seasoned veterans trained for unstable and hazardous
-                environments, our tactical rescue units deploy rapidly to locate,
-                extract, and stabilize individuals in high-risk zones — often when
-                traditional responders can’t reach them.
+                environments, our tactical rescue units deploy rapidly to
+                locate, extract, and stabilize individuals in high-risk zones —
+                often when traditional responders can’t reach them.
               </p>
             </div>
             <div class="bg-white text-center">
@@ -292,14 +328,16 @@ import planningImg from '../assets/picryl-planning.webp';
                 class="object-cover w-full max-h-[150px]"
                 loading="lazy"
               />
-              <h3 class="flex items-center justify-center bg-zinc-900 text-white text-lg font-semibold p-2">
+              <h3
+                class="flex items-center justify-center bg-zinc-900 text-white text-lg font-semibold p-2"
+              >
                 Medical Response
               </h3>
               <p class="p-4">
                 We deliver immediate field-based medical care, setting up triage
                 zones, coordinating with EMTs and field hospitals, and managing
-                patient flow under crisis conditions. Our presence ensures no time
-                is lost between injury and care.
+                patient flow under crisis conditions. Our presence ensures no
+                time is lost between injury and care.
               </p>
             </div>
             <div class="bg-white text-center">
@@ -309,15 +347,17 @@ import planningImg from '../assets/picryl-planning.webp';
                 class="object-cover w-full max-h-[150px]"
                 loading="lazy"
               />
-              <h3 class="flex items-center justify-center bg-zinc-900 text-white text-lg font-semibold p-2">
+              <h3
+                class="flex items-center justify-center bg-zinc-900 text-white text-lg font-semibold p-2"
+              >
                 Strategic Planning
               </h3>
               <p class="p-4">
-                We serve as the operational nerve center during disaster response
-                — advising NGOs, local governments, and relief agencies. From
-                initial assessment to sustained recovery, we provide
-                boots-on-the-ground leadership and scalable action plans that keep
-                aid efforts aligned and effective.
+                We serve as the operational nerve center during disaster
+                response — advising NGOs, local governments, and relief
+                agencies. From initial assessment to sustained recovery, we
+                provide boots-on-the-ground leadership and scalable action plans
+                that keep aid efforts aligned and effective.
               </p>
             </div>
           </div>
@@ -326,16 +366,15 @@ import planningImg from '../assets/picryl-planning.webp';
     </div>
 
     <!-- CTA Section -->
-    <section class="py-32 px-4 md:px-8 bg-black/70 text-white text-center bg-cover bg-center bg-[url('/public/irg-blackhawk.webp')] bg-blend-darken">
-      <p class="text-center">logo here</p>
+    <section
+      class="py-32 px-4 md:px-8 bg-black/70 text-white text-center bg-cover bg-center bg-[url('/public/irg-blackhawk.webp')] bg-blend-darken"
+    >
       <h2 class="text-3xl font-bold mb-4">Join the Mission</h2>
       <p>
         Help us deliver faster, smarter disaster response — grounded in service
         and built on experience.
       </p>
-      <p class="mb-12">
-        Contact us to find out how you can help!
-      </p>
+      <p class="mb-12">Contact us to find out how you can help!</p>
       <div class="space-x-4">
         <a
           href="#contact"
@@ -346,26 +385,31 @@ import planningImg from '../assets/picryl-planning.webp';
     </section>
     <!-- / CTA Section -->
 
-
-
-    <div id="help" class="bg-white bg-fixed bg-cover bg-center bg-[url('/public/topography-pattern-desktop.svg')]">
+    <div
+      id="help"
+      class="bg-white bg-fixed bg-cover bg-center bg-[url('/public/topography-pattern-desktop.svg')]"
+    >
       <!-- help Section -->
       <section class="px-6 py-12 md:py-20">
         <div class="max-w-5xl mx-auto text-center">
           <h2 class="flex text-3xl font-bold text-center mb-4 justify-center">
-          <div class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2">
-            <span class="material-symbols-outlined !font-black !text-2xl">double_arrow</span>
-          </div>
-          Volunteer
-        </h2>
+            <div
+              class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2"
+            >
+              <span class="material-symbols-outlined !font-black !text-2xl"
+                >double_arrow</span
+              >
+            </div>
+            Volunteer
+          </h2>
           <p class="text-lg text-zinc-700">
-            Whether you're ex-military, a medical professional, or a civilian with
-            logistics, communications, or tech expertise — there's a role for you.
-            We need team members who can operate under pressure, adapt quickly,
-            and support mission-critical work. If you’ve got experience in field
-            operations, drone surveillance, HAM radio, transportation, crisis
-            counseling, or hands-on aid distribution, you can make a difference
-            when it matters most.
+            Whether you're ex-military, a medical professional, or a civilian
+            with logistics, communications, or tech expertise — there's a role
+            for you. We need team members who can operate under pressure, adapt
+            quickly, and support mission-critical work. If you’ve got experience
+            in field operations, drone surveillance, HAM radio, transportation,
+            crisis counseling, or hands-on aid distribution, you can make a
+            difference when it matters most.
           </p>
         </div>
       </section>
@@ -373,17 +417,22 @@ import planningImg from '../assets/picryl-planning.webp';
       <section class="px-6 py-12 md:py-20">
         <div class="max-w-5xl mx-auto text-center">
           <h2 class="flex text-3xl font-bold text-center mb-4 justify-center">
-            <div class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2">
-              <span class="material-symbols-outlined !font-black !text-2xl">double_arrow</span>
+            <div
+              class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2"
+            >
+              <span class="material-symbols-outlined !font-black !text-2xl"
+                >double_arrow</span
+              >
             </div>
             Donate
           </h2>
           <p class="text-lg text-zinc-700">
             Your support goes directly toward fueling action. Donations help us
-            deploy faster, move farther, and operate longer — covering costs like
-            emergency medical supplies, transport fuel, field-ready gear,
+            deploy faster, move farther, and operate longer — covering costs
+            like emergency medical supplies, transport fuel, field-ready gear,
             satellite comms, and mobile infrastructure. Every dollar is a force
-            multiplier in disaster zones where time and readiness can save lives.
+            multiplier in disaster zones where time and readiness can save
+            lives.
           </p>
         </div>
       </section>
@@ -391,8 +440,12 @@ import planningImg from '../assets/picryl-planning.webp';
       <section class="px-6 py-12 md:py-20">
         <div class="max-w-5xl mx-auto text-center">
           <h2 class="flex text-3xl font-bold text-center mb-4 justify-center">
-            <div class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2">
-              <span class="material-symbols-outlined !font-black !text-2xl">double_arrow</span>
+            <div
+              class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2"
+            >
+              <span class="material-symbols-outlined !font-black !text-2xl"
+                >double_arrow</span
+              >
             </div>
             Partner With Us
           </h2>
@@ -410,9 +463,15 @@ import planningImg from '../assets/picryl-planning.webp';
       <!-- FAQ Section -->
       <section class="px-6 py-12 md:py-20">
         <div class="max-w-4xl mx-auto">
-          <h2 class="flex text-3xl font-bold mb-8 flex items-center justify-center">
-            <div class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2">
-              <span class="material-symbols-outlined !font-black !text-2xl">question_mark</span>
+          <h2
+            class="flex text-3xl font-bold mb-8 flex items-center justify-center"
+          >
+            <div
+              class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2"
+            >
+              <span class="material-symbols-outlined !font-black !text-2xl"
+                >question_mark</span
+              >
             </div>
             Frequently Asked Questions
           </h2>
@@ -451,8 +510,8 @@ import planningImg from '../assets/picryl-planning.webp';
               </h3>
               <p class="text-zinc-700">
                 Yes. We work in direct coordination with NGOs, emergency
-                operations centers, and local officials to supplement and enhance
-                response efforts on the ground.
+                operations centers, and local officials to supplement and
+                enhance response efforts on the ground.
               </p>
             </div>
             <div>
@@ -460,28 +519,35 @@ import planningImg from '../assets/picryl-planning.webp';
                 Is my contribution tax-deductible?
               </h3>
               <p class="text-zinc-700">
-                Yes, we are a registered nonprofit organization. All contributions
-                are tax-deductible to the fullest extent allowed by law. A receipt
-                will be provided after donation.
+                Yes, we are a registered nonprofit organization. All
+                contributions are tax-deductible to the fullest extent allowed
+                by law. A receipt will be provided after donation.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-
       <!-- Contact Section -->
-      <section id="contact" class="px-6 py-12 md:py-20 bg-zinc-200/50 ">
-        <p class="text-center">logo here</p>
+      <section id="contact" class="px-6 py-12 md:py-20 bg-zinc-200/50">
+        <LogoFull class="fill-zinc-900 w-full max-w-[200px] md:max-w-[300px] mx-auto mb-12"/>
         <div class="max-w-4xl mx-auto">
-          <h2 class="flex text-3xl font-bold mb-8 flex items-center justify-center">
-            <div class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2">
+          <h2
+            class="flex text-3xl font-bold mb-8 flex items-center justify-center"
+          >
+            <div
+              class="border border-solid rounded-full size-[36px] flex items-center justify-center mr-2"
+            >
               <span class="material-symbols-outlined !text-2xl">mail</span>
             </div>
             Contact Us
           </h2>
           <p class="mb-6">
-            Whether you're ready to volunteer, looking to donate, or exploring partnership opportunities — we want to hear from you. Tell us about your background, skills, or how you’d like to contribute. If you're unsure how to help but want to make a difference, reach out — we'll find the right fit.
+            Whether you're ready to volunteer, looking to donate, or exploring
+            partnership opportunities — we want to hear from you. Tell us about
+            your background, skills, or how you’d like to contribute. If you're
+            unsure how to help but want to make a difference, reach out — we'll
+            find the right fit.
           </p>
           <form
             class="grid grid-cols-1 gap-6"
@@ -517,7 +583,6 @@ import planningImg from '../assets/picryl-planning.webp';
         </div>
       </section>
     </div>
-
 
     <!-- Subscribe Section -->
     <!-- <section id="subscribe" class="px-6 py-12 bg-zinc-200 text-center">
