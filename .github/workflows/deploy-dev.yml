@@ -35,9 +35,3 @@ jobs:
           publish_dir: ./dist
           cname: dev.integratedresponsegroup.com
           publish_branch: gh-pages-dev
-
-      - name: Create GitHub Deployment
-        uses: softprops/github-deploy-action@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          environment: dev
