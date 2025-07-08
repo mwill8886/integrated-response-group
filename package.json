@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "homepage": "https://mwill8886.github.io/integrated-response-group/",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "SITE_ENV=dev astro dev",
+    "build": "SITE_ENV=prod astro build",
     "postbuild": "touch dist/.nojekyll",
     "preview": "astro preview",
     "astro": "astro",
