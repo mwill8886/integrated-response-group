@@ -10,3 +10,5 @@
 - **Mailchimp Email** — Handles email campaigns and CRM
 
 - **Google Analytics** — Site analytics - NEED TO SETUP
+
+- **Givebutter** — Donations - NEED TO SETUP
