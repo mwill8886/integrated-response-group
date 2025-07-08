@@ -37,7 +37,7 @@ jobs:
           publish_branch: gh-pages-dev
 
       - name: Create GitHub Deployment
-        uses: softprops/github-deploy-action@v1
+        uses: softprops/github-action-deploy@v0.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           environment: dev
