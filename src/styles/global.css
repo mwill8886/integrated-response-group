@@ -21,11 +21,17 @@ xl   => 1280px  (min-width)
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Raleway';
   src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
