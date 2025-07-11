@@ -2,6 +2,8 @@
 
 ## Site Copy & Information Architecture
 
+updated DNS A @ WebsiteBuilder Site to github pages
+
 ## Hero Section
 
 ### Headline
